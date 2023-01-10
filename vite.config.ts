@@ -5,5 +5,9 @@ import eslint from 'vite-plugin-eslint';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [tsconfigPaths(), eslint(), react()],
+  plugins: [
+    tsconfigPaths(),
+    eslint({ ignorePath: '.eslintignore', overrideConfigFile: '.eslintrc.cjs' }),
+    react(),
+  ],
 });
