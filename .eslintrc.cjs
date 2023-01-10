@@ -33,6 +33,7 @@ module.exports = {
         'plugin:@typescript-eslint/recommended',
         'plugin:react/recommended',
         "plugin:react-hooks/recommended",
+        'plugin:jsx-a11y/recommended',
         'plugin:storybook/recommended',
         'plugin:prettier/recommended',
       ],
@@ -52,6 +53,7 @@ module.exports = {
 
         'react/prop-types': 'off',
         'react/react-in-jsx-scope': 'off',
+        'jsx-a11y/anchor-is-valid': 'off',
 
         '@typescript-eslint/no-unused-vars': ['error'],
         '@typescript-eslint/explicit-function-return-type': ['off'],
