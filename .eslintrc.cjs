@@ -4,7 +4,7 @@ module.exports = {
         node: true,
         es2021: true,
     },
-    parserOptions: { ecmaVersion: 2021, sourceType: 'module' },
+    parserOptions: {ecmaVersion: 2021, sourceType: 'module'},
     ignorePatterns: ['node_modules/*'],
     extends: ['eslint:recommended'],
     overrides: [
@@ -12,7 +12,7 @@ module.exports = {
             files: ['**/*.ts', '**/*.tsx'],
             parser: '@typescript-eslint/parser',
             settings: {
-                react: { version: 'detect' },
+                react: {version: 'detect'},
                 'import/resolver': {
                     typescript: {},
                 },
@@ -22,6 +22,13 @@ module.exports = {
                 node: true,
                 es2021: true,
             },
+            extends: [
+                'eslint:recommended',
+                'plugin:prettier/recommended',
+            ],
+            rules: {
+                'prettier/prettier': ['error', {}, { usePrettierrc: true }],
+            }
         }
     ]
 }
