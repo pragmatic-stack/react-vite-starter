@@ -1,15 +1,15 @@
 {
   "compilerOptions": {
-    "target": "ES2021",
+    "target": "es2022",
     "useDefineForClassFields": true,
-    "lib": ["DOM", "DOM.Iterable", "ES2021"],
+    "lib": ["DOM", "DOM.Iterable", "es2022"],
     "allowJs": false,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "ES2021",
+    "module": "es2022",
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
