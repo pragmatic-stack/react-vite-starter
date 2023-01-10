@@ -16,6 +16,9 @@ module.exports = {
         'import/resolver': {
           typescript: {},
         },
+        'import/parsers': {
+          '@typescript-eslint/parser': ['.ts', '.tsx'],
+        },
       },
       env: {
         browser: true,
@@ -24,10 +27,21 @@ module.exports = {
       },
       extends: [
         'eslint:recommended',
+        'plugin:import/errors',
+        'plugin:import/warnings',
+        'plugin:import/typescript',
+        'plugin:@typescript-eslint/recommended',
+        'plugin:react/recommended',
         'plugin:storybook/recommended',
         'plugin:prettier/recommended',
       ],
       rules: {
+        '@typescript-eslint/no-unused-vars': ['error'],
+        '@typescript-eslint/explicit-function-return-type': ['off'],
+        '@typescript-eslint/explicit-module-boundary-types': ['off'],
+        '@typescript-eslint/no-empty-function': ['off'],
+        '@typescript-eslint/no-explicit-any': ['off'],
+
         'prettier/prettier': ['error', {}, { usePrettierrc: true }],
       },
     },
