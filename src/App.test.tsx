@@ -1,14 +1,13 @@
 import { render, screen } from '@testing-library/react';
+import { expect } from 'vitest';
 
-import App from '../App';
+import App from './App';
 
 describe('App', () => {
   it('should work as expected', () => {
     render(<App />);
 
-    screen.debug();
-
-    expect(1 + 1).toBe(2);
+    expect(screen.getByText('App')).toBeInTheDocument();
   });
 });
 
