@@ -5,11 +5,14 @@
   "type": "module",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
+    "postinstall": "husky install",
     "dev": "vite",
     "build": "tsc -p tsconfig.prod.json && vite build",
+    "lint": "eslint --fix --ext .js,.ts,.tsx ./src --ignore-path .gitignore",
+    "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|ts|tsx)\"",
+    "preview": "vite preview",
     "test": "vitest",
     "test:coverage": "vitest run --coverage",
-    "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build -o ./build/storybook"
   },
@@ -56,6 +59,7 @@
     "husky": "^8.0.3",
     "i": "^0.3.7",
     "jsdom": "^21.0.0",
+    "lint-staged": "^13.1.0",
     "postcss": "^8.4.21",
     "prettier": "^2.8.2",
     "prop-types": "^15.8.1",
@@ -66,5 +70,10 @@
     "vite-plugin-eslint": "^1.8.1",
     "vite-tsconfig-paths": "^4.0.3",
     "vitest": "^0.27.1"
+  },
+  "lint-staged": {
+    "*.+(ts|tsx)": [
+      "pnpm lint"
+    ]
   }
 }
