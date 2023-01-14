@@ -21,6 +21,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^5.48.1
   '@typescript-eslint/parser': ^5.48.1
   '@vitejs/plugin-react': ^3.0.0
+  '@vitest/coverage-istanbul': ^0.27.1
   autoprefixer: ^10.4.13
   axios: ^1.2.2
   clsx: ^1.2.1
@@ -75,6 +76,7 @@ devDependencies:
   '@typescript-eslint/eslint-plugin': 5.48.1_da5cdd7106ab600812e6b4eeaf354f91
   '@typescript-eslint/parser': 5.48.1_eslint@8.31.0+typescript@4.9.4
   '@vitejs/plugin-react': 3.0.1_vite@4.0.4
+  '@vitest/coverage-istanbul': 0.27.1_jsdom@21.0.0
   autoprefixer: 10.4.13_postcss@8.4.21
   eslint: 8.31.0
   eslint-config-prettier: 8.6.0_eslint@8.31.0
@@ -3442,6 +3444,30 @@ packages:
       - supports-color
     dev: true
 
+  /@vitest/coverage-istanbul/0.27.1_jsdom@21.0.0:
+    resolution: {integrity: sha512-VVLwkyRloXb5laEWdCDb5Ns4+W7vtb1PBJR0nLXZRCuzDKH3VeWYmb4xeYn6I9fz9Yv9Vmcke2X/gd3/lKW5Vw==}
+    dependencies:
+      istanbul-lib-coverage: 3.2.0
+      istanbul-lib-instrument: 5.2.1
+      istanbul-lib-report: 3.0.0
+      istanbul-lib-source-maps: 4.0.1
+      istanbul-reports: 3.1.5
+      test-exclude: 6.0.0
+      vitest: 0.27.1_jsdom@21.0.0
+    transitivePeerDependencies:
+      - '@edge-runtime/vm'
+      - '@vitest/browser'
+      - '@vitest/ui'
+      - happy-dom
+      - jsdom
+      - less
+      - sass
+      - stylus
+      - sugarss
+      - supports-color
+      - terser
+    dev: true
+
   /@yarnpkg/esbuild-plugin-pnp/3.0.0-rc.15_esbuild@0.16.16:
     resolution: {integrity: sha512-kYzDJO5CA9sy+on/s2aIW0411AklfCi8Ck/4QDivOqsMKpStZA2SsR+X27VTggGwpStWaLrjJcDcdDMowtG8MA==}
     engines: {node: '>=14.15.0'}
@@ -6352,6 +6378,17 @@ packages:
       istanbul-lib-coverage: 3.2.0
       make-dir: 3.1.0
       supports-color: 7.2.0
+    dev: true
+
+  /istanbul-lib-source-maps/4.0.1:
+    resolution: {integrity: sha512-n3s8EwkdFIJCG3BPKBYvskgXGoy88ARzvegkitk60NxRdwltLOTaH7CUiMRXvwYorl0Q712iEjcWB+fK/MrWVw==}
+    engines: {node: '>=10'}
+    dependencies:
+      debug: 4.3.4
+      istanbul-lib-coverage: 3.2.0
+      source-map: 0.6.1
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /istanbul-reports/3.1.5:

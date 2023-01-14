@@ -1,4 +1,6 @@
 # React Vite starter
+![Known Vulnerabilities](https://snyk.io/test/github/pragmatic-stack/react-vite-starter/badge.svg)
+
 A modern stack to kick off react 18 apps fast.
 
 ## ToDo | Roadmap
@@ -31,4 +33,13 @@ A modern stack to kick off react 18 apps fast.
 - Vitest setup and testing-library integration
 - Storybook setup
 - Build configuration for app and storybook
+- Snyk vulnerablility scans
 
+## Testing - Vitest
+
+To run tests for that project we use vitest as test runner.
+Learn more about the tool here: [Vitest](https://vitest.dev/)
+
+### Scripts
+- `pnpm test` - run tests with vitest
+- `pnpm test:coverage` run tests with istanbul coverage provider

@@ -26,3 +26,4 @@ dist-ssr
 # Build directories
 storybook-static
 build
+coverage

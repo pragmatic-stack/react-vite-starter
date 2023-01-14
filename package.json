@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "tsc -p tsconfig.prod.json && vite build",
     "test": "vitest",
-    "coverage": "vitest run --coverage",
+    "test:coverage": "vitest run --coverage",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build -o ./build/storybook"
@@ -40,6 +40,7 @@
     "@typescript-eslint/eslint-plugin": "^5.48.1",
     "@typescript-eslint/parser": "^5.48.1",
     "@vitejs/plugin-react": "^3.0.0",
+    "@vitest/coverage-istanbul": "^0.27.1",
     "autoprefixer": "^10.4.13",
     "eslint": "^8.31.0",
     "eslint-config-prettier": "^8.6.0",
