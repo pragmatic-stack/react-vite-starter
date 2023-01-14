@@ -5,7 +5,6 @@ A modern stack to kick off react 18 apps fast.
 
 ## ToDo | Roadmap
 
-- Husky integration
 - Swagger codegen setup and wiring
 - Mock Service Worker setup and workflow
   - MSW Data mocking for tests
@@ -34,6 +33,9 @@ A modern stack to kick off react 18 apps fast.
 - Storybook setup
 - Build configuration for app and storybook
 - Snyk vulnerablility scans
+- Husky integration
+  - commit-message
+  - pre-commit hook
 
 ## Testing - Vitest
 
