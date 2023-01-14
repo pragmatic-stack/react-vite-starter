@@ -42,6 +42,17 @@ A modern stack to kick off react 18 apps fast.
 To run tests for that project we use vitest as test runner.
 Learn more about the tool here: [Vitest](https://vitest.dev/)
 
+A couple of useful libraries were pre installed:
+- testing-library/dom
+- testing-library/react-dom 
+- testing-library/react
+- testing-library/user-event
+
 ### Scripts
 - `pnpm test` - run tests with vitest
 - `pnpm test:coverage` run tests with istanbul coverage provider
+
+### Configuration
+- Test setup resides in `./src/__test__/setup.ts`
+- Test configuration resides in `vite.config.js` as vitest config object
+- More about coverage settings can be found here: [Vitest | Coverage](https://vitest.dev/guide/coverage.html)
