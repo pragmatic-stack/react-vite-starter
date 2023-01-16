@@ -1,8 +1,8 @@
 import matchers from '@testing-library/jest-dom/matchers';
 import { cleanup } from '@testing-library/react';
-import { expect, afterEach, beforeAll } from 'vitest';
+import { expect, afterEach, beforeAll, afterAll } from 'vitest';
 
-import { server } from '@/__api__/server';
+import { server } from '@/__msw__/server';
 
 expect.extend(matchers);
 
