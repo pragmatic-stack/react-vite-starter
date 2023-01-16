@@ -10,9 +10,10 @@ export default defineConfig({
   test: {
     globals: true,
     environment: 'jsdom',
-    setupFiles: './src/__tests__/setup.ts',
+    setupFiles: './src/setupTests.ts',
     coverage: {
       provider: 'istanbul',
+      exclude: ['./src/__msw__/**/*', './src/__test__/**/*'],
     },
   },
   plugins: [
