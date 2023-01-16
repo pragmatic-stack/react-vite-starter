@@ -1,5 +1,8 @@
-import * as process from 'process';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
 
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:3001';
+const config = {
+  apiUrl: API_URL,
+  mode: import.meta.env.MODE,
+};
 
-export { API_URL };
+export { API_URL, config };
