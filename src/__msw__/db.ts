@@ -4,6 +4,7 @@ const db = factory({
   todo: {
     id: primaryKey(String),
     name: String,
+    completed: Boolean,
   },
 });
 
