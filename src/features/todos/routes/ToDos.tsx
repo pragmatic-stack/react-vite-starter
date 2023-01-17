@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { ToDosList } from '@/features/todos/components/ToDosList';
+
 import { useTodos } from '../api/getTodos';
 
 export const ToDos: React.FC = () => {
@@ -7,10 +9,8 @@ export const ToDos: React.FC = () => {
 
   return (
     <div>
-      <h1>Todos</h1>
-      <div>
-        {data && data.count && data.data.map((todo) => <div key={todo.id}>{todo.name}</div>)}
-      </div>
+      <h1 className="bg-primary-900">Todos</h1>
+      {data && <ToDosList items={data.data} />}
     </div>
   );
 };
