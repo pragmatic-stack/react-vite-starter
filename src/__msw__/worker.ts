@@ -1,6 +1,6 @@
 import { setupWorker } from 'msw';
 
-import { handlers } from '@/__msw__/handlers';
+import { handlers } from './handlers';
 
 const worker = setupWorker(...handlers);
 

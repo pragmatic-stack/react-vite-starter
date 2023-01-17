@@ -5,6 +5,7 @@ import { ToDosRoutes } from '@/features/todos';
 const getRoutes = (): RouteObject[] => {
   return [{ path: '/todos/*', element: <ToDosRoutes /> }];
 };
+
 const AppRoutes = () => {
   const common: RouteObject[] = [{ path: '/todos/*', element: <ToDosRoutes /> }];
 
