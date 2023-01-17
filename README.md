@@ -7,11 +7,7 @@ A modern stack to kick off react 18 apps fast.
 
 - Swagger codegen setup and wiring
 - Mock Service Worker setup and workflow
-  - MSW Data mocking for tests
-  - MSW Data mocking for development
-  - MSW Storybook
-- Axios client setup
-- React Query setup and integration
+  - MSW Storybook - render routes for storybook development with msw data
 - Storybook setup and feature stories
 - Dockerfiles
   - App
@@ -36,6 +32,11 @@ A modern stack to kick off react 18 apps fast.
 - Husky integration
   - commit-message
   - pre-commit hook
+- Mock Service Worker setup and workflow
+  - MSW Data mocking for tests
+  - MSW Data mocking for development
+- Axios client setup
+- React Query setup and integration
 
 ## Testing - Vitest
 

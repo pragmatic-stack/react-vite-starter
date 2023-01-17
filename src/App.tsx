@@ -1,6 +1,14 @@
 import React from 'react';
+
+import { AppProvider } from '@/providers/app';
+import { AppRoutes } from '@/routes';
+
 function App() {
-  return <div className="w-full h-full bg-primary-900">App</div>;
+  return (
+    <AppProvider>
+      <AppRoutes />
+    </AppProvider>
+  );
 }
 
 export default App;
