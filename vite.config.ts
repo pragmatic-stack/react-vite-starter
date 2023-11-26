@@ -1,3 +1,5 @@
+import path from 'path';
+
 import react from '@vitejs/plugin-react';
 import eslint from 'vite-plugin-eslint';
 import tsconfigPaths from 'vite-tsconfig-paths';
@@ -6,6 +8,11 @@ import { defineConfig } from 'vitest/config';
 export default defineConfig({
   build: {
     outDir: 'build/app',
+  },
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
   },
   test: {
     globals: true,
@@ -18,7 +25,10 @@ export default defineConfig({
   },
   plugins: [
     tsconfigPaths(),
-    eslint({ ignorePath: '.eslintignore', overrideConfigFile: '.eslintrc.cjs' }),
+    eslint({
+      ignorePath: '.eslintignore',
+      overrideConfigFile: '.eslintrc.cjs',
+    }),
     react(),
   ],
 });
