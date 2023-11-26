@@ -7,6 +7,6 @@ describe('Todos Route', () => {
     renderTest({ currentUrl: '/todos' });
 
     expect(screen.getByText('Todos')).toBeInTheDocument();
-    expect(await screen.findByText('0')).toBeInTheDocument();
+    expect(await screen.findByText('Buy milk')).toBeInTheDocument();
   });
 });

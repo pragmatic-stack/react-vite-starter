@@ -8,9 +8,13 @@ type ToDoItemProps = {
 
 const ToDoItem: React.FC<ToDoItemProps> = ({ data: { id, name, completed } }) => {
   return (
-    <div>
-      {id} | {name} | {completed}
-    </div>
+    <pre>
+      <span>{id}</span>
+      <span> | </span>
+      <span>{completed ? '✅' : '🟩'}</span>
+      <span> | </span>
+      <span>{name}</span>
+    </pre>
   );
 };
 
